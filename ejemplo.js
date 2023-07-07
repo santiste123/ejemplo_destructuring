@@ -1,3 +1,4 @@
+
 let solicitudCartaPorte={
     "cantidadSolicitudes": 1,
     "observacionesGenerales": "obs adiciona",
@@ -235,7 +236,7 @@ console.log(solicitudCartaPorte)
 // console.log(localidadDescripcion);
 // console.log(calle);
 
-const { ubicaciones: {ubicacionOrigen: { codigoPostal,localidadDescripcion,calle } }} = solicitudCartaPorte;
+const { ubicaciones: {ubicacionOrigen:{domicilio: { codigoPostal,localidadDescripcion,calle} }}} = solicitudCartaPorte;
 
 console.log(codigoPostal);
 console.log(localidadDescripcion);
